@@ -55,6 +55,8 @@ google.com.br (domínio)
 - Cascading
     - Cascata
     - Regras das escritas
+    - Hierarquia
+    - Especifidade
 - Style
     - Estilo
 - Sheet
@@ -62,3 +64,7 @@ google.com.br (domínio)
 
 Falamos de um arquivo que terá na sua sintaxe, declarações, propriedades e valores.
 A partir disso, o HTML é impactado visualmente.
+
+ - Declaração 
+ - Seletor
+ - Propriedade e valor
