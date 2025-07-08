@@ -50,4 +50,15 @@ google.com.br (domínio)
     - Nome
 - Server
     - Servidor
-# E-sports-NLW
+
+# CSS
+- Cascading
+    - Cascata
+    - Regras das escritas
+- Style
+    - Estilo
+- Sheet
+    - Folha
+
+Falamos de um arquivo que terá na sua sintaxe, declarações, propriedades e valores.
+A partir disso, o HTML é impactado visualmente.
