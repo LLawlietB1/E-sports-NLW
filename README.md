@@ -16,12 +16,14 @@
 
 # HTTP
 
-- HyperText 
+- HyperText  
 - Transfer
     - Transferência 
 - Protocol
     - Protocolo 
     - Conjunto de regras
+- Methods HTTP (verbos): Get(solicitar/recuperar), Post(enviar), Patch/Put(atualizar), Delete(deletar)
+- Headers (cabeçalhos): Instruções/Informações extras para cada chamada
 
 
 # URL 
@@ -110,3 +112,20 @@ CSS funciona com o conceito de Box Model (tudo é caixa)
     - Objeto
 - Model
     - Modelo
+
+# API 
+- Application 
+- Programming 
+- Interface
+- JSON: JavaScript Object Notation
+
+# CDN 
+- Content
+- Delivery
+- Network 
+
+# LLM 
+- Large
+- Language
+- Model 
+- Gemini, OpenAI (ChatGPT), Anthropi (Calude) ...

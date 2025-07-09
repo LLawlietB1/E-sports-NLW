@@ -6,19 +6,46 @@ const aiResponse = document.getElementById('aiResponse')
 const form = document.getElementById('form')
 
 
-const questionAI = async () => {
-    
+const markdownToHTML = (text) => {
+    const converter = new showdown.Converter()
+    return converter.makeHtml(text)
 }
 
-const sendForm = (event) => {
+
+const askAI = async (question, game, apiKey) => {
+    const model = 'gemini-2.5-flash'
+    const baseURL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`
+    const ask = `
+       Olha, tenho esse jogo ${game} e queria saber ${question}
+    `
+    const contents = [{
+        parts: [{
+            text: ask
+        }]
+    }]
+
+    //chamada API
+    const response = await fetch(baseURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            contents
+        })
+    })
+
+    const data = await response.json()
+    return data.candidates[0].content.parts[0].text
+}
+
+const sendForm = async (event) => {
     event.preventDefault()
-    const apiKey = apiKeyInput.value 
-    const game = gameSelect.value 
+    const apiKey = apiKeyInput.value
+    const game = gameSelect.value
     const question = questionInput.value
 
-    console.log({apiKey, game, question})
-
-    if(apiKey == '' || game == '' || question == '') {
+    if (apiKey == '' || game == '' || question == '') {
         alert('Por favor, preencha todos os campos')
         return
     }
@@ -26,9 +53,11 @@ const sendForm = (event) => {
     askButton.textContent = "Perguntando..."
     askButton.classList.add('loading')
 
-    try{ 
+    try {
         //Perguntar para a IA
-    } catch(error) {
+        const text = await askAI(question, game, apiKey)
+        aiResponse.querySelector('.response-content').innerHTML = markdownToHTML(text)
+    } catch (error) {
         console.log('Erro: ', error)
     } finally {
         askButton.disabled = false;
