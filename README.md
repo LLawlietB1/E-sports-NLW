@@ -101,6 +101,7 @@ CSS funciona com o conceito de Box Model (tudo é caixa)
     - Number (números)
     - String (textos) (" ", ' ', ` `)
     - Boolean: true | false
+    - Objects 
 
 # DOM
 - Document
