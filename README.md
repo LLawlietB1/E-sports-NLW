@@ -68,3 +68,12 @@ A partir disso, o HTML é impactado visualmente.
  - Declaração 
  - Seletor
  - Propriedade e valor
+
+CSS funciona com o conceito de Box Model
+# Box Model
+- Espaços internos: Padding
+- Bordas: Border
+- Espaços externos: Margin
+- Conteúdo: Content
+- Largura: width
+- Altura: height
