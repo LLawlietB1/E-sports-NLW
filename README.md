@@ -69,7 +69,7 @@ A partir disso, o HTML é impactado visualmente.
  - Seletor
  - Propriedade e valor
 
-CSS funciona com o conceito de Box Model
+CSS funciona com o conceito de Box Model (tudo é caixa)
 # Box Model
 - Espaços internos: Padding
 - Bordas: Border
@@ -77,3 +77,35 @@ CSS funciona com o conceito de Box Model
 - Conteúdo: Content
 - Largura: width
 - Altura: height
+
+# JS
+- Linguagem de programação 
+- Browsers
+- Input -> Process -> Output
+- Variáveis
+- Functions
+    - Agrupamento e reuso de código
+    - Sequência lógica
+    - Saída de dados
+- Gemini (IA): Esperar uma resposta
+- Mexer no meu navegador 
+- Estrutura de dados 
+- Estrutura de decisão 
+- Algoritmo: sequência de passos lógica, de maneira ordenada, a fim de chegar a alguma conclusão (limitada).
+- Lógica (pensamento computacional)
+    - Abstração 
+    - Decomposição 
+    - Algoritmo
+    - Reconhecimento de padrão  
+- Tipos de dados
+    - Number (números)
+    - String (textos) (" ", ' ', ` `)
+    - Boolean: true | false
+
+# DOM
+- Document
+    - Documento
+- Object
+    - Objeto
+- Model
+    - Modelo

@@ -19,15 +19,15 @@
             <h2 class="title">Assistente de Meta</h2>
             <p>Pergunte sobre estratégias, build e dicas para os seus jogos</p>
             <form>
-                <input type="password" placeholder="Informe a API KEY do Gemini" required>
+                <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
 
-                <select>
+                <select id="gameSelect">
                     <option value="">Selecione um jogo</option>
                     <option value="valorant">Valorant</option>
                     <option value="lol">League of Legends</option>
                     <option value="warframe">Warframe</option>
                 </select>
-                <input type="text" placeholder="Ex: Melhor Build para sup..." required>
+                <input id="questionInput" type="text" placeholder="Ex: Melhor Build para sup..." required>
                 <button>
                     Perguntar
                 </button>
@@ -40,5 +40,6 @@
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html> 
