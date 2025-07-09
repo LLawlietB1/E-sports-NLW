@@ -129,3 +129,12 @@ CSS funciona com o conceito de Box Model (tudo é caixa)
 - Language
 - Model 
 - Gemini, OpenAI (ChatGPT), Anthropi (Calude) ...
+
+# Agentes AI
+- Tools (ferramentas): permitem uso de código, ou apps, ou qualquer informação extra.
+- Melhor contexto
+
+# Engenharia de prompt
+- One shot: uma única pergunta sem muito contexto
+- Few shot: é apresentado exemplos do que se espera
+- Chain of Thought: cadeia de pensamentos para a IA responder gradativamente conforme instruido. 
